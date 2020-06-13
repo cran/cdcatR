@@ -1,0 +1,15 @@
+utils::globalVariables(
+  c('item.position',
+    'lwr',
+    'upr',
+    'pP.k',
+    'i',
+    'item.position',
+    'pattern.recovery',
+    'attribute.recovery',
+    'item.position',
+    'pattern.recovery',
+    'attribute.recovery',
+    'cond',
+    'pb',
+    'item'))

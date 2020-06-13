@@ -1,0 +1,62 @@
+cdcat 1.0.0:
+
+DESCRIPTION:
+* version and date updated
+* P. Nájera listed as a co-author
+* package dependencies updated
+
+att.plot:
+* CDM package accepted
+* nonparametric CD-CAT accepted
+* k argument included for selecting the attributes to be plotted. If k = NULL (by default), all attributes are plotted
+* color has been added to the plot: red = non-mastered, green = mastered, blue = unclassified
+
+cdcat: 
+* CDM package accepted
+* several item selection rules included: GDI, JSD, MPWKL, PWKL, NPS, random (argument itemSelect)
+* nonparametric CD-CAT included (itemSelect = "NPS")
+	* different arguments available: gate, pseudo.prob, w.type, and seed (argument NPS.args). pseudo.prob and w.type are experimental
+	* some arguments needed to be modified / included (e.g., Q is required with nonparametric CD-CAT)
+* parallelization included (argument n.cores)
+* some warning / error messages included
+* information regarding multiple modes (for ML and MAP) included in the output
+* i.print is a deprecated argument. When parallelizing, no information is printed
+* updated information and references
+* new example for the nonparametric CD-CAT included
+* examples updated 
+
+cdcat.summary:
+* major update
+* item exposure information included
+* optional label argument included (in case two objects share model)
+* CDM package accepted
+* nonparametric CD-CAT accepted
+* plots improved (e.g., without secondary grids)
+* violin plot for variable length CD-CAT improved (e.g., geom_dotplot instead of geom_jitter, x axis labels removed)
+
+cdcat.comp:
+* function removed. cdcat.comp is now included in cdcat.summary
+
+gen.data:
+* new function to simulate data
+
+gen.itembank:
+* major update
+* data generation under different CDMs using the GDINA::simGDINA function
+* additional specifications when creating a Q-matrix included 
+
+LR2step:
+* example updated
+* CDM package accepted
+* error when K^*j = 4 fixed
+* p.adjust.methods method and alpha.level arguments included
+* new output included LR2.adjp and models.adjp
+
+sim180combination, 180DINA, sim180GDINA
+* updated
+
+helper:
+* all functions required for cdcat and gen.itembank functions included
+
+zzz:
+* version updated
